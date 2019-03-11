@@ -1,0 +1,14 @@
+Instalar projeto
+    django-admin startproject devmedia
+    cd devmedia/
+    python manage.py startapp primeirosPassos
+    python manage.py migrate
+    python manage.py runserver
+Criar model
+    adicionar atributos no arquivo models.py
+    python manage.py makemigrations
+    python manage.py migrate
+Testar base de dados
+    python manage.py shell
+    >>> from primeirosPassos.models import Pessoa
+    >>> Pessoa.objects.create(nome='teste', idade=20, sexo='M', cidade='Rio de Janeiro', email='teste@email.com')

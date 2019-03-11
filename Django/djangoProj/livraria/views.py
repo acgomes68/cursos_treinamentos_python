@@ -4,7 +4,7 @@ from .models import *
 
 # Create your views here.
 
-class Livro(ModelForm):
+class LivroForm(ModelForm):
     class Meta:
         model = Livro
         fields = ['autor', 'editora', 'isbn', 'numeroPaginas', 'titulo', 'anoPublicacao', 'emailEditora']

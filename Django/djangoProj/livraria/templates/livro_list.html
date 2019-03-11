@@ -16,6 +16,7 @@
                 <th>Título</th>
                 <th>Ano</th>
                 <th>Editora</th>
+                <th>Ação</th>
             </tr>
 
         </thead>
@@ -26,6 +27,14 @@
                 <td>{{ livro.titulo }}</td>
                 <td>{{ livro.anoPublicacao }}</td>
                 <td>{{ livro.editora}}</td>
+                <td>
+                    <a href="{% url 'livro_edit' pk=livro.pk %}">
+                        <span class="glyphicon glyphicon-pencil"></span>
+                    </a>
+                    <a href="{% url 'livro_remove' pk=livro.pk %}">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </a>
+                </td>
             </tr>
             {% endfor %}
         </tbody>

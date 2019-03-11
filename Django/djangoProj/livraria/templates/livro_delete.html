@@ -1,18 +1,17 @@
 {% extends 'base.html' %}
-{% load bootstrap3 %}
 
 {% block title %}
-    Cadastro de Livros
+    Remoção de Livros
 {% endblock title %}
 
 {% block tituloPagina %}
-    Cadastro de Livros
+    Remoção de Livros
 {% endblock tituloPagina %}
 
 {% block content %}
     <form method="post">
         {% csrf_token %}
-        {% bootstrap_form form %}
-        <button type="submit" class="btn btn-primary">Salvar</button>
+        <h4>Tem certeza que deseja excluir o livro "{{ livro.titulo}}"?</h4>
+        <button type="submit" class="btn btn-primary">Remover</button>
     </form>
 {% endblock content %}

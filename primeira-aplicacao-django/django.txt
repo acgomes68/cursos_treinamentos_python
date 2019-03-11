@@ -12,3 +12,14 @@ Testar base de dados
     python manage.py shell
     >>> from primeirosPassos.models import Pessoa
     >>> Pessoa.objects.create(nome='teste', idade=20, sexo='M', cidade='Rio de Janeiro', email='teste@email.com')
+Criar rota
+    Alterar arquivo urls.py do projeto, usando o path e o include
+    Criar arquivo urls.py na pasta da aplicação fazendo o include do arquivo urls.py do projeto e da biblioteca .views
+Criar view
+    Criar arquivo views na pasta da aplicação, importando a model Pessoa
+    Criar método listar, lendo objeto Pessoa e passando para o template lista.html
+Criar template
+    Criar diretório templates na pasta da aplicação
+    Criar arquivo base.html no formato HTML5 e adicionar bloco de conteúdo
+    Criar arquivo lista.html, importando base.html e executando o loop do objeto Pessoa enviado pelo método da view
+

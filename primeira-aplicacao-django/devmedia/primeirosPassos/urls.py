@@ -1,9 +1,9 @@
 from django.contrib import admin
 from django.urls import path, include
+from .views import *
 
 urlpatterns = [
-    path(r'^lista_registros/', listar_registros),
-    # path(r'^lista_registros/(\d+)/$', listar_registros),
+    path('listar/', listar),
 ]
 
 '''

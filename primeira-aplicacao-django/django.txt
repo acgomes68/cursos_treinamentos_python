@@ -2,6 +2,7 @@ Instalar projeto
     django-admin startproject devmedia
     cd devmedia/
     python manage.py startapp primeirosPassos
+    Atualizar arquivos settings diretiva INSTALLED_APPS
     python manage.py migrate
     python manage.py runserver
 Criar model
